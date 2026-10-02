@@ -1,0 +1,21 @@
+{
+  "name": "shelf-verifier",
+  "version": "1.0.0",
+  "description": "Read-only KTRU shelf verification and physical sorting guide",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node --test"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "better-sqlite3": "^13.0.3",
+    "express": "^5.2.1"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}

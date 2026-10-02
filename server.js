@@ -77,7 +77,7 @@ if (require.main === module) {
       readonly: true,
       fileMustExist: true,
     });
-    const port = Number(process.env.PORT || 3002);
+    const port = Number(process.env.PORT || 3000);
     const server = createApp(db).listen(port, "127.0.0.1", () =>
       console.log(`KTRU Shelf Verifier running at http://localhost:${port}`),
     );

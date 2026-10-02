@@ -12,16 +12,16 @@ npm install
 npm start
 ```
 
-Open http://localhost:3002. `npm test` runs the built-in Node test runner;
+Open http://localhost:3000. `npm test` runs the built-in Node test runner;
 no build step or extra testing dependencies are needed. If the port is occupied,
-macOS: `PORT=3003 npm start`; PowerShell: `$env:PORT=3003; npm start`.
+macOS: `PORT=3001 npm start`; PowerShell: `$env:PORT=3001; npm start`.
 Install dependencies on each computer rather than copying `node_modules` between
 macOS and Windows, because better-sqlite3 contains a native module.
 
-## Marina's workflow
+## Workflow
 
 1. Validate a target shelf against catalog `rainbow_albums.final_shelf`.
-2. Scan physical CDs left to right, placing each CD on top of one stack after
+2. Scan physical CDs, placing each CD on top of one stack after
    its lookup completes. Unknown barcodes are retained by barcode and assigned
    to Pile 2; the return stage shows “Set aside”. Ambiguous barcodes and failed
    server/network requests require a retry or catalog correction and are not
